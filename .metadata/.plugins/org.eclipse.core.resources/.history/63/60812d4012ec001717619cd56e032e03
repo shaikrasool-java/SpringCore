@@ -1,0 +1,14 @@
+package com.java.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Collection {
+
+	public static void main(String[] args) {
+		
+		Object obj=null;
+		ApplicationContext ap=new ClassPathXmlApplicationContext("src/com/java/cfgs/collection.xml");
+		obj=ap.getBean("c")
+	}
+}

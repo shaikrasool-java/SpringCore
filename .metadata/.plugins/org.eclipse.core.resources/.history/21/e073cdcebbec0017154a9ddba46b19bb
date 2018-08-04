@@ -1,0 +1,16 @@
+package com.java.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.java.beans.RequiredCollection;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Object obj=null;
+		ApplicationContext ap=new ClassPathXmlApplicationContext("com.java.cfgs.spring.xml");
+		RequiredCollection rd=(RequiredCollection)obj;
+		rd.printData();
+	}
+}

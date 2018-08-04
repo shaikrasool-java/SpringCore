@@ -1,0 +1,27 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ -->
+	<beans xmlns="org/springframework/beans/factory/xml/spring-beans-2.0.xsd"
+			xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+			>
+		<bean id="r" class="com.java.beans.RequiredCollection" >
+			<property name="fruits">
+					<util:list list-class="java.util.Vector">
+					<value>Apple</value>
+					<value>Mango</value>
+					</util:list>
+				</property>
+			
+			<property name="cricketers">
+			
+			<util:Set
+			
+			</property>
+			
+		
+
+		</bean>
+	</beans>

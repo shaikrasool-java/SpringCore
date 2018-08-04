@@ -1,0 +1,13 @@
+package com.java.beans;
+
+public class Engine {
+
+	private String modelYear;
+	
+	public void setModelyear(String modelYear){
+		this.modelYear=modelYear;
+	}
+	public void getModelYear(){
+		return modelYear;
+	}
+}

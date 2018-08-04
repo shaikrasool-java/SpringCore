@@ -1,0 +1,29 @@
+package com.java.test;
+
+
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.java.beans.Car;
+
+
+
+public class SetterInjection {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext ap=null;
+		Object obj=null;
+		
+	String files[]=new String[]{"src/com/java/cfgs/car.xml", "src/com/java/cfgs/engine.cml"};
+		 ap=new ClassPathXmlApplicationContext(files);
+		 obj=ap.getBean("c");
+		 Car c=(Car)obj;
+
+		c.printData();
+		 	
+	}
+
+
+}

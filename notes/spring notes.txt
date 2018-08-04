@@ -1,0 +1,85 @@
+Dependency Injection
+---------------------:>
+here the underlaying server/container/framework dynamically creates main dependent class objects assigns dependent class object to main class/target class object.
+
+Ex
+---:>
+1) assigning meterial to student when register for the course(non-techincal example)
+2)the way consturctor executes to assign initial values to object when object is created is called Dependency Injection.(technical -example).
+
+NOTE
+----:>
+here underlying server/container/framework dynamically ushes dependent objects to main/target object.
+
+
+5 modes of Dependency Injection
+--------------------------------:>
+1) setter injection.
+2) constructor injection.
+3) aware injection/interfac-e injection.
+4) loopup method injection.
+5) method replacer/ method injection. 
+
+Advantages:
+----------->
+* container dynamicall assigns dependent objects to main objects.
+Disadvantages:
+-------------->
+*container may assign both neccassary, unneccessary objects to main object.
+
+
+
+Spring2.x modules
+------------------
+core
+====>
+*base module for other modules.
+*if it is used alone, can be used to develop standalone apps(core java).
+*it is mainly given for dependancy management.
+*it gives two containers
+--------------------------->
+	1)BeanFactory
+	2)ApplicationContext
+*it gives support for 5 modes of dependecy management
+	1) setter injection
+	2) constructor inject
+	3) aware injection/interfac-e injection.
+	4) loopup method injection.
+	5) method replacer/ method injection. 
+
+DAO/JDBC
+========>
+* provides abstraction layer on plain jdbc and simplifies persitence logic development.
+* translates uderlaying plain jdbc exceptions to spring specific DataAccessException class herrarchy exceptions by using exception rethrowing concept
+		
+	public Object queryForObject(String query)
+	{
+	try{
+	....
+	....// plain JDBC code
+	....
+	}
+	catch(SQLException se){
+	throw new DataAccessException(...); using exception rethrowing concept.
+
+ORM
+===>
+* provides abstractionlayer multiple ORM s/ws and simplifies objects based ORM persistence logic development.
+* 
+
+WEB
+====>
+part1) provides pugins to make spring apps communicatable from other web framework apps.
+part2)spring Web MVC
+		|--> spring's direct framework to develop MVC based web applications.
+
+JEE
+====>
+*provides abstraction layer multiple jse,jee technologies and simplifies application process
+* provides abstraction layer on JDBC,JMS,JTA,RMI,EJB,JNDI and etc... technologies
+
+AOP
+====>
+* not replcaement for oop
+* complimnets oop
+* it is all about developing secondary logics/ middleware services and enabling or disabling them on the appliations.

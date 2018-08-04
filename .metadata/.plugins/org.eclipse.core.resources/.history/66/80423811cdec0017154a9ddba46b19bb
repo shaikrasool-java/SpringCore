@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<!-- <bean id="c" class="com.java.beans.Car" dependency-check="none"> no 
+		need to call setters....offcourse we will get run exception because of we 
+		are are providing any values for that properties. -->
+	
+	
+	<!-- <bean id="c" class="com.java.beans.Car" dependency-check="simple"> 
+		<property name="carname" value="AUDI"></property> here aslo we will get runtime 
+		exception... -->
+	
+	
+	
+	<!-- <bean id="c" class="com.java.beans.Car" dependency-check="objects">
+		<property name="engine" ref="e"></property>
+	</bean>
+	<bean id="e" class="com.java.beans.Engine" dependency-check="simple">
+		<property name="modelYear" value="2018"></property>
+	</bean>
+	
+	here no complie time error and run time exception...program terminates successfullu
+	 -->
+</beans>

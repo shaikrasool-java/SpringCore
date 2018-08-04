@@ -1,0 +1,14 @@
+package com.java.beans;
+
+public class Car {
+
+	private String cname;
+	private Engine engine;
+	
+	public void setCname(String cname){
+		this.cname=cname;
+	}
+	public void setEngine(String engine){
+		this.engine=engine;
+	}
+}

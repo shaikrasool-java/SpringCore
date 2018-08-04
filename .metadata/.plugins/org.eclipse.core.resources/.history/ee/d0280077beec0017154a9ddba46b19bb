@@ -1,0 +1,12 @@
+package com.java.beans;
+
+import java.util.Properties;
+
+public class Property {
+
+	private Properties driver;
+	//setter methods
+	public void setDriver(Properties driver){
+		this.driver=driver;
+	}
+}

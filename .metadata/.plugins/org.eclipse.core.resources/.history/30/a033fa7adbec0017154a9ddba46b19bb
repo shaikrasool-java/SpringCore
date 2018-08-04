@@ -1,0 +1,11 @@
+package com.java.beans;
+
+public class Car {
+
+	private Engine engine;
+	
+	//setters
+	public void setEngine(String engine){
+		this.engine=engine;
+	}
+}

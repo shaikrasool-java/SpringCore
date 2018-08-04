@@ -1,0 +1,16 @@
+package com.java.test;
+
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
+
+public class SetterInjectionTest {
+
+	public static void main(String[] args) {
+		
+		//locate spring bean config file
+		Resource res=null;
+		res=new FileSystemResource("/IOC_WishGenerator/src/com/java/cfgs/applicationContext.xml");
+		//create ioc container
+		
+	}
+}

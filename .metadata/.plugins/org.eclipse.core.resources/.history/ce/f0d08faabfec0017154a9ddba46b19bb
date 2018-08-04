@@ -1,0 +1,11 @@
+package com.java.test;
+
+
+import com.java.beans.Property;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+	}
+}

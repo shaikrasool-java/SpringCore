@@ -1,0 +1,22 @@
+package com.java.beans;
+
+public class ConstructorDI {
+
+	private String type;
+	private int height;
+	public ConstructorDI(String type, int height) {
+		super();
+		this.type = type;
+		this.height = height;
+	}
+	public String getType(){
+		return type;
+	}
+	public int getHeight(){
+		return height;
+	}
+	
+	
+	
+	
+}

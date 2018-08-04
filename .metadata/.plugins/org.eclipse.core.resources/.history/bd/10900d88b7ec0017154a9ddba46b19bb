@@ -1,0 +1,26 @@
+package com.java.beans;
+
+import java.util.Hashtable;
+import java.util.TreeSet;
+import java.util.Vector;
+
+public class RequiredCollection {
+
+		private Vector fruits;
+		private TreeSet cricketers;
+		private Hashtable cc;
+		
+		//setters methods
+		public void setFruits(Vector fruits){
+			this.fruits=fruits;
+		}
+		
+		public void setCricketers(TreeSet cricketers){
+			this.cricketers=cricketers;
+		}
+		public void setCc(Hashtable cc){
+			this.cc=cc;
+			
+		}
+		
+}

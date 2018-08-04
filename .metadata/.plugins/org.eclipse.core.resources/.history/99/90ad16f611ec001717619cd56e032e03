@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean id="c" class="com.java.beans.CollectionsDI">
+	
+	<property name="fruits">
+	<list>
+	<value>Apple</value>
+	<value>Mango</value>
+	<value>Banana</value>
+	</list>
+	</property>
+	
+		<property name="Cricketers">
+		<set>
+		<value>Virat</value>
+		<value>Dhoni</value>
+		<value>Yuvi</value>
+		</set>
+		</property>
+
+
+			<property name="cc">
+			<map>
+			<entry key="India" value="Delhi"></entry>
+			<entry key="PK" value="Islamabad"></entry>
+			<entry key="Bangladesh" value="Kabul"></entry>
+			</map>
+			
+			</property>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</bean>
+</beans>

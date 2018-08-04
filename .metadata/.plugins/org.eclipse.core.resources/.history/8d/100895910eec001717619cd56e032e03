@@ -1,0 +1,19 @@
+package com.java.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ap=null;
+		Object obj=null;
+		ap=new ClassPathXmlApplicationContext("src/com/java/cfgs/car.xml");
+		obj=ap.getBean("c");
+		
+				
+	}
+}

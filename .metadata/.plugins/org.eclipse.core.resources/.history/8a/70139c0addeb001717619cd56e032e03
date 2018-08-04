@@ -1,0 +1,24 @@
+package com.java.beans;
+
+import java.util.Date;
+
+public class WishMessageGenerator {
+	
+	private Date date;
+	
+	public void Set(Date date){
+		this.date=date;
+		
+	}
+	// business method
+	
+	public String generateWishMsg(String name){
+		
+		int hour=0;
+		//get current hour
+		 hour=date.getHours()ours();
+	}
+	
+	
+
+}

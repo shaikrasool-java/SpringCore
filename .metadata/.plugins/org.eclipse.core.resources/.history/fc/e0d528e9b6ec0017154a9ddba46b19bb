@@ -1,0 +1,13 @@
+package com.java.beans;
+
+import java.util.Hashtable;
+import java.util.TreeSet;
+import java.util.Vector;
+
+public class RequiredCollection {
+
+		private Vector fruits;
+		private TreeSet cricketers;
+		private Hashtable cc;
+		
+}
